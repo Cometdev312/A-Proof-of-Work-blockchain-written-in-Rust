@@ -127,3 +127,5 @@ Also, all threads share data, specifically the **block list** and the **transact
 - [ ] Halving
 - [ ] Blockchain disk storage
 - [ ] Digital signing of transactions
+
+If you have any question with this project, feel free to reach out.
