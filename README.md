@@ -1,7 +1,4 @@
 # rust-blockchain
-
-![example workflow](https://github.com/mrnaveira/rust-blockchain/actions/workflows/build.yaml/badge.svg) ![example workflow](https://github.com/mrnaveira/rust-blockchain/actions/workflows/lint.yaml/badge.svg) ![example workflow](https://github.com/mrnaveira/rust-blockchain/actions/workflows/test.yaml/badge.svg) [![Coverage Status](https://coveralls.io/repos/github/mrnaveira/rust-blockchain/badge.svg?service=github)](https://coveralls.io/github/mrnaveira/rust-blockchain)
-
 A Proof of Work blockchain written in Rust. For educational purposes only.
 
 Features:
@@ -74,7 +71,7 @@ This project implements a simplified PoW algorithm based on hashes, in the line 
 ## Development notes
 
 ### Git hooks
-This project uses [cargo-husky](https://github.com/rhysd/cargo-husky) to setup a Git pre-commit hook to check code style (using [clippy](https://github.com/rust-lang/rust-clippy) and [rustfmt](https://github.com/rust-lang/rustfmt)), cargo dependencies and run all tests. If any of those tasks fails, the hook prevents you to commit the changes.
+This project uses to setup a Git pre-commit hook to check code style (using [clippy](https://github.com/rust-lang/rust-clippy) and [rustfmt](https://github.com/rust-lang/rustfmt)), cargo dependencies and run all tests. If any of those tasks fails, the hook prevents you to commit the changes.
 
 To automatically create the hooks in your local git repository, simply run all tests the first time:
 ```bash
@@ -82,7 +79,7 @@ $ cargo test
 ```
 
 ### GitHub Actions
-There are also multiple GitHub Actions (using [actions-rs](https://github.com/actions-rs)) under the `.github/workflows` folder, as a form of CI. On each commit or PR they perform similar checks as the Git hooks (clippy/rustfmt, dependencies/build and test) plus the test coverage (explained in the [coverage section](#test-coverage) ). The results are displayed as badges below the title of this README.
+There are also multiple GitHub Actions under the `.github/workflows` folder, as a form of CI. On each commit or PR they perform similar checks as the Git hooks (clippy/rustfmt, dependencies/build and test) plus the test coverage (explained in the [coverage section](#test-coverage) ). The results are displayed as badges below the title of this README.
 
 ### Test organization
 The test organization follows the [recommended guidelines for Rust](https://doc.rust-lang.org/book/ch11-03-test-organization.html):
